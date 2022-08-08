@@ -2,7 +2,7 @@ const { isMessageComponentGuildInteraction } = require('discord-api-types/utils/
 const { Client, Intents } = require('discord.js');
 const client = new Client({ intents: 32767, partials: ['USER', 'MESSAGE', 'CHANNEL', 'REACTION', 'GUILD_MEMBER'] });
 
-client.login("OTk5NjAzMjE1MzQ1NjQ3Njg3.GyMMcQ.9zb3huYtNFbXegJPc4-k6qiG7MHUEzQM0G9YCo")
+client.login("process.env.token")
 
 client.on('ready', async() => {
     console.log(`Bot online.\nNome bot: ${client.user.tag}`);
